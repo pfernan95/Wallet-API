@@ -1,4 +1,4 @@
-# POC-Wallet-API
+# Wallet-API
 
 Creación de una API REST basada en una arquitectura hexagonal en la cual se han definido los siguientes endpoints:
 
