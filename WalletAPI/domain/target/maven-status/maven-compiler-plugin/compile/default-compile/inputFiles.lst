@@ -1,0 +1,8 @@
+D:\IntelliJ Projects\WalletAPI\domain\src\main\java\com\example\service\UserServiceImpl.java
+D:\IntelliJ Projects\WalletAPI\domain\src\main\java\com\example\service\WalletServiceImpl.java
+D:\IntelliJ Projects\WalletAPI\domain\src\main\java\com\example\ports\api\WalletServicePort.java
+D:\IntelliJ Projects\WalletAPI\domain\src\main\java\com\example\ports\api\UserServicePort.java
+D:\IntelliJ Projects\WalletAPI\domain\src\main\java\com\example\data\WalletDTO.java
+D:\IntelliJ Projects\WalletAPI\domain\src\main\java\com\example\data\UserDTO.java
+D:\IntelliJ Projects\WalletAPI\domain\src\main\java\com\example\ports\spi\WalletPersistencePort.java
+D:\IntelliJ Projects\WalletAPI\domain\src\main\java\com\example\ports\spi\UserPersistencePort.java

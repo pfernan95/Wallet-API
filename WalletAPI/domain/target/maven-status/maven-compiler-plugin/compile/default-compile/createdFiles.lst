@@ -1,0 +1,8 @@
+com\example\data\UserDTO.class
+com\example\ports\api\UserServicePort.class
+com\example\data\WalletDTO.class
+com\example\ports\spi\UserPersistencePort.class
+com\example\service\UserServiceImpl.class
+com\example\ports\api\WalletServicePort.class
+com\example\ports\spi\WalletPersistencePort.class
+com\example\service\WalletServiceImpl.class
