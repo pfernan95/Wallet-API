@@ -1,0 +1,7 @@
+com\example\entity\User.class
+com\example\repository\UserRepository.class
+com\example\adapter\WalletJpaAdapter.class
+com\example\adapter\UserJpaAdapter.class
+com\example\repository\WalletRepository.class
+com\example\entity\Wallet.class
+com\example\util\RandomStringUtil.class
