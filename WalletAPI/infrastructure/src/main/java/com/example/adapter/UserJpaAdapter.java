@@ -62,7 +62,7 @@ public class UserJpaAdapter implements UserPersistencePort, UserDetailsService {
             userRepository.save(newUser);
 
             outputMsg = "Usuario con login " + newUser.getLogin() + " creado correctamente.";
-            return new ResponseEntity<>("{\"message\": \"" + outputMsg + "\"}", HttpStatus.ACCEPTED);
+            return new ResponseEntity<>("{\"message\": \"" + outputMsg + "\"}", HttpStatus.OK);
         }
     }
 
@@ -91,7 +91,7 @@ public class UserJpaAdapter implements UserPersistencePort, UserDetailsService {
 
         if (BCrypt.checkpw(authRequest.getPassword(),userDetails.getPassword())){
             final String token = jwtTokenUtil.generateToken(userDetails);
-            return new ResponseEntity<>("{\"token\": \"" + token + "\"}", HttpStatus.ACCEPTED);
+            return new ResponseEntity<>("{\"token\": \"" + token + "\"}", HttpStatus.OK);
         } else {
             outputMsg = "Login y/o contraseña incorrectos.";
             return new ResponseEntity<>("{\"message\": \"" + outputMsg + "\"}", HttpStatus.UNAUTHORIZED);

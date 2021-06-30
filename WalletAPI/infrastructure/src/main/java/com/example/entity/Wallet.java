@@ -7,7 +7,7 @@ import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
 
 import javax.persistence.*;
-import java.util.Set;
+import java.util.List;
 
 @DynamicInsert
 @Entity
@@ -33,7 +33,7 @@ public class Wallet {
     private User user;
 
     @OneToMany(mappedBy = "wallet")
-    private Set<WalletHistory> walletHistorySet;
+    private List<WalletHistory> walletHistoryList;
 
 
     public Wallet(){}
@@ -80,11 +80,11 @@ public class Wallet {
         this.user = user;
     }
 
-    public Set<WalletHistory> getWalletHistorySet() {
-        return walletHistorySet;
+    public List<WalletHistory> getWalletHistoryList() {
+        return walletHistoryList;
     }
 
-    public void setWalletHistorySet(Set<WalletHistory> walletHistorySet) {
-        this.walletHistorySet = walletHistorySet;
+    public void setWalletHistoryList(List<WalletHistory> walletHistoryList) {
+        this.walletHistoryList = walletHistoryList;
     }
 }
